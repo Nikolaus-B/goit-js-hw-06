@@ -17,6 +17,7 @@ const listEl = document.querySelector(".gallery");
 listEl.classList.add("list");
 listEl.style.display = "flex";
 listEl.style.gap = "20px";
+
 const makeCard = images
   .map(
     ({ url, alt }) => ` <li><img src="${url}" alt="${alt}" class="img" /></li>`

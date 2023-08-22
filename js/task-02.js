@@ -8,6 +8,7 @@ const ingredients = [
 ];
 
 const list = document.querySelector("#ingredients");
+list.classList.add("list");
 
 const elements = [];
 
