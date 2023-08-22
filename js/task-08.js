@@ -1,5 +1,5 @@
 const form = document.querySelector(".login-form");
-let elements = {};
+let FormElements = {};
 form.addEventListener("submit", onFormSubmit);
 
 function onFormSubmit(event) {
@@ -9,11 +9,11 @@ function onFormSubmit(event) {
   const email = formEl.email.value;
   const password = formEl.password.value;
 
-  elements.email = email;
-  elements.password = password;
+  FormElements.email = email;
+  FormElements.password = password;
 
-  if (elements.email && elements.password) {
-    console.log(elements);
+  if (FormElements.email && FormElements.password) {
+    console.log(FormElements);
     form.reset();
   } else {
     alert("Enter the necessary data in the text forms");
